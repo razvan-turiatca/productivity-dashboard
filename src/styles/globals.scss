@@ -1,0 +1,50 @@
+/* Reset some basic elements */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select,
+option {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
