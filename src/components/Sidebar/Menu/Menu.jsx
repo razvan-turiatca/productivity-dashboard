@@ -1,12 +1,21 @@
-import styled from 'styled-components';
-import { Inter } from 'next/font/google';
+import { menuItems } from '../../../../data/data';
 
-const inter = Inter({ subsets: ['latin'] });
+import styled from 'styled-components';
 
 const SidebarMenu = () => {
   return (
     <StyledMenu>
-      <h2>Menu</h2>
+      {menuItems.map((item) => {
+        const { name, icon } = item;
+
+        return (
+          <StyledMenuItem key={name}>
+            {icon}
+
+            <h5>{name}</h5>
+          </StyledMenuItem>
+        );
+      })}
     </StyledMenu>
   );
 };
@@ -14,7 +23,22 @@ const SidebarMenu = () => {
 export default SidebarMenu;
 
 const StyledMenu = styled.div`
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  height: 40%;
+  border-bottom: 1px solid gray;
+`;
+
+const StyledMenuItem = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+`;
+
+const StyledIcon = styled.svg`
+  fill: #fff;
 `;
