@@ -18,6 +18,7 @@ const Sidebar = () => {
 export default Sidebar;
 
 const StyledSidebar = styled.div`
+  line-height: 28px;
   width: 250px;
   height: 100vh;
   background-color: #2c3e50;
