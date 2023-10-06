@@ -1,9 +1,14 @@
+import { MenuItem } from '@/components/shared/menuItem';
 import styled from 'styled-components';
+import { accountItems } from '../../../../data/data';
 
 const Account = () => {
   return (
     <StyledAccount>
-      <h2>Account</h2>
+      {accountItems.map((accountItem) => {
+        const { name, icon } = accountItem;
+        return <MenuItem name={name} icon={icon} />;
+      })}
     </StyledAccount>
   );
 };
@@ -14,6 +19,7 @@ const StyledAccount = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25%;
+  flex-direction: column;
+  height: 20%;
   border-bottom: 1px solid gray;
 `;

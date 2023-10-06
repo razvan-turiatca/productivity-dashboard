@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const LogoSection = () => {
   return (
     <StyledLogo>
-      <h2>Logo</h2>
+      <h2>Life App</h2>
     </StyledLogo>
   );
 };
