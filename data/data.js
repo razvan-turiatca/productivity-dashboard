@@ -15,10 +15,7 @@ export const menuItems = [
     name: 'Projects',
     icon: projectsMenuSVG,
   },
-  {
-    name: 'Notifications',
-    icon: notifications,
-  },
+
   {
     name: 'Tasks',
     icon: tasks,
@@ -37,6 +34,10 @@ export const accountItems = [
   {
     name: 'Settings',
     icon: settings,
+  },
+  {
+    name: 'Notifications',
+    icon: notifications,
   },
   {
     name: 'Support',

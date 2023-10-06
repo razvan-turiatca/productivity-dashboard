@@ -4,10 +4,12 @@ import Sidebar from '@/components/Sidebar/Sidebar';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Sidebar />
     </div>
   );
-}
+};
+
+export default Home;

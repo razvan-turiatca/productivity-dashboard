@@ -16,6 +16,7 @@ const Account = () => {
 export default Account;
 
 const StyledAccount = styled.div`
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
